@@ -7,7 +7,7 @@
       width: 375px;
       height: 667px;
       background: #fff;
-      border: 3px solid #ccc;
+      border: 3px solid #f0f0f0;
       border-radius: 10px 0 0 10px;
       padding-bottom: 10px;
       max-height: 100vh;
@@ -109,6 +109,7 @@
         const href = $(e.currentTarget).find('a').get(0).href
         $('.browser-iframe').attr('src', href)
         $('.btn-group > .el-icon-loading').css('display', 'inline')
+        $('.browser').removeClass('browser-fold')
       }
     })
     $('.btn-group').on('click', '.btn', function (e) {
